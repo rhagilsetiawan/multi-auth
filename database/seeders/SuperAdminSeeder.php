@@ -16,21 +16,21 @@ class SuperAdminSeeder extends Seeder
     {
         // Creating Super Admin User
         $superAdmin = User::create([
-            'name' => 'Rivo',
+            'name' => 'Super Admin Rhagel',
             'email' => 'superadmin@roles.id',
             'password' => Hash::make('123456')
         ]);
         $superAdmin->assignRole('Super Admin');
         // Creating Admin User
         $admin = User::create([
-            'name' => 'Meri',
+            'name' => 'Rhagel Admin02',
             'email' => 'admin@roles.id',
             'password' => Hash::make('123456')
         ]);
         $admin->assignRole('Admin');
         // Creating Product Manager User
         $productManager = User::create([
-            'name' => 'Fahri',
+            'name' => 'Ragil Operan',
             'email' => 'operator@roles.id',
             'password' => Hash::make('123456')
         ]);
@@ -38,21 +38,21 @@ class SuperAdminSeeder extends Seeder
 
         //mengikuti tugas
         $adminBaak = User::create([
-            'name' => "Bakri",
+            'name' => "Bakragil",
             'email' => 'adminbaak@roles.id',
             'password' => Hash::make('123456')
         ]);
         $adminBaak->assignRole('Admin Baak'); 
 
         $adminKeuangan = User::create([
-            'name' => "Ahmad Keuangan",
+            'name' => "Duitragil",
             'email' => 'adminkeuangan@roles.id',
             'password' => Hash::make('123456')
         ]);
         $adminKeuangan->assignRole('Admin Keuangan');
         
         $mahasiswa = User::create([
-            'name' => "Mahasiswa",
+            'name' => "Maharagil",
             'email' => 'mahasiswa@roles.id',
             'password' => Hash::make('123456'),
             'type' => 3
@@ -61,7 +61,7 @@ class SuperAdminSeeder extends Seeder
 
         // tugas AdminLTE
         // $admin_lte = User::create([
-        //     'name' => 'AdminLTE',
+        //     'name' => 'RagilLTE',
         //     'email' => 'adminlte@roles.id',
         //     'password' => Hash::make('123456'),
         //     'type' => 4
